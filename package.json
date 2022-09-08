@@ -42,7 +42,6 @@
   "devDependencies": {
     "@stdlib/assert-is-regexp": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
-    "@stdlib/function-ctor": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"

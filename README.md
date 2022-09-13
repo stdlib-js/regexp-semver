@@ -31,13 +31,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.0.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.0.1-deno/mod.js';
 ```
 
 #### reSemVer()
@@ -111,7 +111,7 @@ var parts = reSemVer.REGEXP.exec( '0.2.3' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.0.1-deno/mod.js';
 
 var RE_SEMVER = reSemVer();
 var version = '1.0.0';

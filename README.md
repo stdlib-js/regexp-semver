@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> [Regular expression][regexp] to match a [semantic version][semantic-version] string.
+> [Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
 <section class="installation">
 
@@ -52,7 +52,7 @@ var reSemVer = require( '@stdlib/regexp-semver' );
 
 #### reSemVer()
 
-Return a [regular expression][regexp] to match a [semantic version][semantic-version] string. 
+Returns a [regular expression][mdn-regexp] to match a [semantic version][semantic-version] string. 
 
 ```javascript
 var RE_SEMVER = reSemVer();
@@ -91,7 +91,7 @@ parts = RE_SEMVER.exec( '1.0.0-alpha.1' );
 
 #### reSemVer.REGEXP
 
-[Regular expression][regexp] to match a [semantic version][semantic-version] string.
+[Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
 ```javascript
 var parts = reSemVer.REGEXP.exec( '0.2.3' );
@@ -204,8 +204,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/regexp-semver.svg
 [npm-url]: https://npmjs.org/package/@stdlib/regexp-semver
 
-[test-image]: https://github.com/stdlib-js/regexp-semver/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/regexp-semver/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/regexp-semver/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/regexp-semver/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/regexp-semver/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/regexp-semver?branch=main
@@ -234,7 +234,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/regexp-semver/main/LICENSE
 
-[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 [semantic-version]: https://semver.org/
 

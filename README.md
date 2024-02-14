@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@esm/index.mjs';
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@esm/index.mjs';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.0-esm/index.mjs';
 ```
 
 #### reSemVer()
@@ -127,7 +127,7 @@ var parts = reSemVer.REGEXP.exec( '0.2.3' );
 <body>
 <script type="module">
 
-import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@esm/index.mjs';
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.0-esm/index.mjs';
 
 var RE_SEMVER = reSemVer();
 

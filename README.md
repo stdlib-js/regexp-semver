@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-semver/tags). For example,
+
+```javascript
 import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.1-deno/mod.js';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
 ```
 
 #### reSemVer()
@@ -122,7 +127,7 @@ var parts = reSemVer.REGEXP.exec( '0.2.3' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@v0.2.1-deno/mod.js';
+import reSemVer from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@deno/mod.js';
 
 var RE_SEMVER = reSemVer();
 

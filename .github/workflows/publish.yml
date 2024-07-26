@@ -211,6 +211,14 @@ jobs:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
 
+      # Upload npm logs:
+      - name: Upload npm logs
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: npm-logs
+          path: /home/runner/.npm/_logs/
+
       # Discard any uncommitted changes:
       - name: 'Discard any uncommitted changes'
         run: |

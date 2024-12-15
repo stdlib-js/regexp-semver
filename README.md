@@ -35,38 +35,32 @@ limitations under the License.
 
 > [Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/regexp-semver
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-reSemVer = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var reSemVer = require( 'path/to/vendor/umd/regexp-semver/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.reSemVer;
-})();
-</script>
+var reSemVer = require( '@stdlib/regexp-semver' );
 ```
 
 #### reSemVer()
@@ -139,13 +133,8 @@ var parts = reSemVer.REGEXP.exec( '0.2.3' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-semver@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var reSemVer = require( '@stdlib/regexp-semver' );
 
 var RE_SEMVER = reSemVer();
 
@@ -176,11 +165,6 @@ bool = RE_SEMVER.test( version );
 version = 'a.b.c';
 bool = RE_SEMVER.test( version );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -190,6 +174,12 @@ bool = RE_SEMVER.test( version );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-semver`][@stdlib/assert/is-semver]</span><span class="delimiter">: </span><span class="description">test if a value is a semantic version string.</span>
 
 </section>
 
@@ -272,6 +262,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [semantic-version]: https://semver.org/
 
 <!-- <related-links> -->
+
+[@stdlib/assert/is-semver]: https://github.com/stdlib-js/assert-is-semver
 
 <!-- </related-links> -->
 

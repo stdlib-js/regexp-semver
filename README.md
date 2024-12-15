@@ -175,6 +175,12 @@ bool = RE_SEMVER.test( version );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-semver`][@stdlib/assert/is-semver]</span><span class="delimiter">: </span><span class="description">test if a value is a semantic version string.</span>
+
 </section>
 
 <!-- /.related -->
@@ -256,6 +262,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [semantic-version]: https://semver.org/
 
 <!-- <related-links> -->
+
+[@stdlib/assert/is-semver]: https://github.com/stdlib-js/assert-is-semver
 
 <!-- </related-links> -->
 
